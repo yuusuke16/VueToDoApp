@@ -7,15 +7,13 @@
 </head>
 <body>
   <div id="app">
-    <p>
-    {{message}}
-    </p>
-    <button v-on:click="reverseMessage">
-    メッセージ反転
-    </button> 
-    </div>
+    <p>現在{{ number }}回クリックされています</p>
+    <button v-on:click="countUp(9)">カウントアップ</button>
+    <p v-on:mousemove="changeMousePosition(3, $event)">マウスを載せてください</p>
+    <p>X:{{x}},Y:{{y}}</p>
+  </div>
   
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
